@@ -1,12 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
+const App = () => (
+  <div className="App">
+    <div className="title">
+      <h1>Zesty</h1>
+      <h2>
+        A photography project <br /> by Brian Palmer
+      </h2>
     </div>
-  );
-}
+
+    <div className="image-container">
+      <img src="https://i.imgur.com/4V2yXZC.jpg" alt="Zesty" />
+    </div>
+  </div>
+);
 
 export default App;
