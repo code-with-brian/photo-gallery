@@ -10,17 +10,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.App {
+section {
     display: flex;
     height: 100vh;
     justify-content: space-between;
-}
-
-.image-container{
-    background-color: #294910;
-    margin: 0;
-    position: relative;
-    width: 50vw;
 }
 
 h1 {
@@ -36,4 +29,71 @@ h2 {
   line-height: 1.2;
   margin: 0 20px 20px;
   font-weight: normal;
+}
+
+figure {
+  background-color: #fff;
+  margin: 0;
+  position: relative;
+  width: 50vw;
+}
+
+figcaption {
+  font-size: 36px;
+  font-weight: normal;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  bottom: 0;
+  color: #fff;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px 0;
+}
+
+img {
+  height:  100vh;
+  object-fit: cover;
+  position: fixed;
+  width: 50%;
+}
+
+.display{
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+aside {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #e8e8e8;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-bar {
+  display: grid;
+  grid-row-gap: 12px;
+}
+
+progress {
+  border: 1px solid #294910;
+  height: 20px;
+  width: 400px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #e8e8e8;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background: #294910;
 }
